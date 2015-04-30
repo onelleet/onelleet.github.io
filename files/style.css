@@ -1,0 +1,377 @@
+/* ONELEET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:active{
+    background-color: transparent;
+}
+
+body {
+    color: #fff;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    min-width: 640px;
+}
+
+.piece {
+    height: 450px;
+    width: 100%;
+}
+
+.vwrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
+/* CONTENT CSS */
+
+
+#head {
+    background-color: #efefef;
+    display: table;
+    position: relative;
+}
+
+#head .quick {
+  background-color: rgba(0,0,0,.50);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px 10px;
+  position: absolute;
+  right: 10px;
+  text-transform: uppercase;
+  top: 10px;
+}
+
+#head .logo {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#head .logo h1 {
+    color: #333;
+    font-size: 55px;
+    font-weight: 100;
+}
+
+#head .logo h1 b {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#head .logo h2 {
+  font-size: 18px;
+  color: #666;
+}
+
+#head .logo h2 a {
+  color: #47c;
+}
+
+#head .scroll {
+    background-image: url("scroll.png");
+    background-size: 50px auto;
+    bottom: 25%;
+    height: 50px;
+    opacity: 0;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+
+    animation: inAndOut 2s 1s 3;
+    -webkit-animation: inAndOut 2s 1s 3;
+}
+
+@keyframes inAndOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0; transform: translateY(50px);}
+}
+
+@-webkit-keyframes inAndOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0; -webkit-transform: translateY(50px);}
+}
+
+#quote {
+    background-color: #c0392b;
+    display: table;
+}
+
+#quote .text {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 290px;
+}
+
+#power {
+    background-image: url('power-card.jpg');
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+#power .electric b {
+    margin-left: 30px;
+}
+
+#power .menu .icon {
+    background-image: url('chargetoggle.png');
+}
+
+#locate {
+    background-image: url('locate-card.jpg');
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+#locate .card {
+    background: none;
+}
+
+#locate .map {
+    opacity: .85;
+}
+
+#locate .menu .icon {
+    background-image: url('directions.png');
+}
+
+#lock {
+    background-image: url('lock-card.jpg');
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+#lock .menu .icon {
+    background-image: url('unlock.png');
+}
+
+#climate {
+    background-image: url('climate-card.jpg');
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+#climate .menu .icon {
+    background-image: url('climateoff.png');
+}
+
+#press {
+  display: none;
+}
+
+#signup {
+    background-color: #2980b9;
+    display: table;
+}
+
+#signup .text {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#signup .text a {
+    color: #fff;
+    border-bottom: 2px dotted #fff;
+}
+
+#signup .button {
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+
+    background-color: #2980b9;
+    border: 4px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    margin: 50px auto 0;
+    height: 55px;
+    line-height: 55px;
+    padding: 0px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 135px;
+
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+#signup .button:hover,
+#signup .button:focus {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#signup .button:active {
+    background-color: #fff;
+    color: #2980b9;
+}
+
+#credits {
+    background-color: #333;
+    display: table;
+    height: 250px;
+    width: 100%;
+}
+
+#credits .container {
+    margin: 0 auto;
+    position: relative;
+    height: 200px;
+    width: 360px;
+}
+
+#credits .logo {
+    background-image: url('sk.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+    display: block;
+    height: 100px;
+    left: 130px;
+    position: absolute;
+    top: 45px;
+    width: 100px;
+}
+
+#credits .social {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50px auto;
+    display: block;
+    height: 50px;
+    position: absolute;
+    float: left;
+    top: 75px;
+    width: 50px;
+}
+
+#credits:hover .facebook, #credits:hover .twitter {
+    opacity: 1;
+
+    transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+}
+
+#credits:hover .googleplus, #credits:hover .linkedin {
+    opacity: 1;
+
+    transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-delay: .2s;
+    -webkit-transition-delay: .2s;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+}
+
+#credits .facebook {
+    background-image: url('facebook.png');
+    left: 60px;
+}
+
+#credits .googleplus {
+    background-image: url('googleplus.png');
+    left: 120px;
+}
+
+#credits .linkedin {
+    background-image: url('linkedin.png');
+    right: 120px;
+}
+
+#credits .twitter {
+    background-image: url('twitter.png');
+    right: 60px;
+}
+
+#credits .name {
+    top: 5px;
+    color: #ccc;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+#credits .legal {
+    bottom: 0;
+    color: #888;
+    font-size: 12px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@media screen and (min-width: 850px) {
+    .piece {
+        height: 600px;
+    }
+
+    #head .logo h1 {
+        font-size: 60px;
+    }
+
+    #quote .text {
+        font-size: 45px;
+        line-height: 45px;
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .piece {
+        height: 800px;
+    }
+
+    #head .logo h1 {
+        font-size: 65px;
+    }
+
+    #quote .text {
+        font-size: 50px;
+        line-height: 50px;
+        width: 355px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+}
