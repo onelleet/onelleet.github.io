@@ -215,10 +215,7 @@ body {
     color: #fff;
     display: block;
     font-size: 20px;
-    margin: 50px auto 0;
     height: 55px;
-    line-height: 55px;
-    padding: 0px 30px;
     text-align: center;
     text-transform: uppercase;
     width: 135px;
@@ -374,4 +371,30 @@ body {
 
 @media screen and (min-width: 1440px) {
 
+}
+
+
+/* OWN */
+
+#signup #mce-EMAIL{ 
+    height: 60px;
+    padding: 10px;
+    display: inline-block;
+    color: black;
+    margin-right: -10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-sizing: border-box;
+}
+
+#signup #mc-embedded-subscribe{ 
+    display: inline-block;
+    bottom: 7px;
+    height: 60px;
+    padding: 10px;
+    position: relative;
+    margin-right: -4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-sizing: border-box;
 }
